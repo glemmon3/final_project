@@ -8,7 +8,7 @@ Based on historical data, I wanted to be able to analyze the statistics of all b
 # The Process
 I first had to go through a very vigorous scraping process that involved scraping not only the data of each game for the Phillies, but for all 30 teams in MLB. Once I had all of that data, I had to create seperate data frames for each season of the Phillies with their opponents statistics for every game. This required sorting through all sorts of schedules online manually. 
 
-Once I had all of the data, I wanted to test several models to try and find which one would give me the best results for predicting the games. After trying Logistic Regression and XGBoost, it was clear that XGBoost was superior and had a higher success rate at 56.58% than Logistic Regression at 46.7%. 
+Once I had all of the data, I wanted to test several models to try and find which one would give me the best results for predicting the games. After trying Logistic Regression and XGBoost, it was clear that XGBoost was superior and had a higher success rate at 65.4% than Logistic Regression at 62.7%. 
 
 With these results, I was able to use the predict_proba function to help accurately predict the % chance of the Phillies either winning the game or losing the game. With these percentages, I was able to create money lines for the game for gambling purposes. For the most part, my numbers were mostly with in a +-30 error compared to the actual books, and that was before even taking into account a human generated advantage for myself. 
 
